@@ -9,6 +9,9 @@ services:
       - db
     ports:
       - "3000:3000"
+    volumes:
+      - .:/usr/src
+      - /usr/src/node_modules
 
   db:
     image: mongo

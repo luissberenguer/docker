@@ -1,0 +1,7 @@
+version: "3.8"
+
+service:
+  app:
+    build: .
+    enviroment:
+      - APP_VARIABLE: "Hola Docker, esto es una variable de entorno"
